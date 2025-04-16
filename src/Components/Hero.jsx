@@ -113,7 +113,7 @@ const Hero = () => {
 
             <input
               type="submit"
-              value={formik.isSubmitting ? "Submitting..." : "Submit"}
+              value={formik.isSubmitting ? "Booking..." : "Book Now"}
               disabled={formik.isSubmitting}
               className="w-[200px] h-[60px] rounded-full bg-[#5969FB] text-white font-inter text-[20px] font-semibold mt-4 cursor-pointer transition-all duration-300 hover:opacity-90 disabled:opacity-60"
             />
