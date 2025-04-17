@@ -50,7 +50,7 @@ const Hero = () => {
   return (
     <section
       className="w-full  mx-auto  bg-no-repeat bg-cover"
-      style={{ backgroundImage: "url('/src/assets/bg.png')" }}
+      style={{ backgroundImage: "url('/bg.png')" }}
     >
      <div className="max-w-[1440px] mx-auto  md:px-12 xxl:px-[10rem] grid grid-cols-1 xl:grid-cols-2">
        {/* Left Side */}
