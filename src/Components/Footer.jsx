@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Footer.css";
+import "../styles/footer.css";
 import logo from "../assets/logo.png";
 import { MdEmail } from "react-icons/md";
 import { HiPhone } from "react-icons/hi2";
