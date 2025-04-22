@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import Hero from '../Components/Hero'
-import "../styles/animateImage.css"; 
+import "../styles/animateImage.css";
 import "../styles/animateSection.css"
 import HomeFeatureSection from "../Components/HomeFeatureSection";
-
+import HomeFeaturedSectionTag from "../Components/HomeFeaturedSectionTag";
+import FeaturedSectionCard from "../Components/FeaturedSectionCard";
 
 const Home = () => {
     const ref = useRef(null);
@@ -21,72 +22,81 @@ const Home = () => {
                 <Hero />
             </section>
             {/* second section */}
-             
             <HomeFeatureSection
-    imageSrc="/home3.webp"
-    imageAlt="performance Insights"
-    tag="Performance Insights"
-    title="Student & Lesson"
-    highlight="Tracking"
-    description={`Maintain detailed lesson notes and progress reports, track attendance and performance
+                imageSrc="/home3.webp"
+                imageAlt="performance Insights"
+                tag="Performance Insights"
+                title="Student & Lesson"
+                highlight="Tracking"
+                description={`Maintain detailed lesson notes and progress reports, track attendance and performance
     metrics, and provide structured feedback to students and parents.
 
-    Keep a detailed record of every lesson with structured notes and progress reports,
-    ensuring a clear learning path for each student. Monitor attendance, track performance
-    metrics, and provide valuable feedback to both students and parents. With organized and
-    data driven insights, you can enhance learning outcomes and foster continuous
-    improvement in an effective and transparent way.`}
-    reverse={false}
-    handleClick={handleClick}
-/>
+    Keep a detailed record of every lesson with structured notes and progress reports, ensuring a clear 
+    learning path for each student. Monitor attendance, track performance metrics, and provide valuable feedback to 
+    both students and parents. With organized and data driven insights, you can enhance learning outcomes and foster 
+    continuous improvement in an effective and transparent way.
 
-<HomeFeatureSection
-    imageSrc="/home1.webp"
-    imageAlt="simplified management"
-    tag="Centralized Profile Management"
-    title="Simplified"
-    highlight="Management"
-    description={`Seemi efficiently manages the profiles and data of students, tutors, and staff
-    in one centralized platform. It allows administrators to create, update, and track
-    individual profiles, ensuring that all relevant information—such as schedules,
-    performance records, and contact details—is easily accessible...`}
-    reverse={true}
-    background="#F7F7FE"
-    handleClick={handleClick}
-/>
-
-<HomeFeatureSection
-    imageSrc="/home2.webp"
-    imageAlt="Automated Communication"
-    tag="Automated Reminders & Updates"
-    title="Automated"
-    highlight="Communication"
-    description={`Send automated email and SMS reminders for lessons and payments, ensuring timely notifications...`}
-    reverse={false}
-    handleClick={handleClick}
-/>
-
-<HomeFeatureSection
-    imageSrc="/home2.webp"
-    imageAlt="Payroll Management"
-    tag="Centralized Profile Management"
-    title="Payroll"
-    highlight="Management"
-    description={`Calendar-based payroll management system simplifies the process for tutors, admin, and
-    support staff by aligning payments with scheduled work hours...`}
-    reverse={true}
-    background="#F7F7FE"
-    handleClick={handleClick}
-/>
-
-
+`}
+                reverse={false}
+                handleClick={handleClick}
+            />
             {/* third section */}
-           
-            {/* Fourth section */}
-           
+            <HomeFeatureSection
+                imageSrc="/home1.webp"
+                imageAlt="simplified management"
+                tag="Centralized Profile Management"
+                title="Simplified"
+                highlight="Management"
+                description={`Seemi efficiently manages the profiles and data of students, tutors, and staff 
+        in one centralized platform. It allows administrators to create, update, and track individual
+         profiles, ensuring that all relevant information—such as schedules, performance records, and 
+         contact details—is easily accessible. Tutors can manage their availability and lesson plans, 
+         while students can track their progress and assignments. The system also facilitates staff management,
+          streamlining tasks, roles, and communications, making it easy to keep everything organized and running 
+          smoothly.
 
-            {/* Fifth section */}
-           
+`}
+                reverse={true}
+                background="#F7F7FE"
+                handleClick={handleClick}
+            />
+            {/* fourth section */}
+            <HomeFeatureSection
+                imageSrc="/home2.webp"
+                imageAlt="Automated Communication"
+                tag="Automated Reminders & Updates"
+                title="Automated"
+                highlight="Communication"
+                description={`
+        Send automated email and SMS reminders for lessons and payments, ensuring timely notifications, while
+        keeping parents informed with regular progress updates for better engagement.
+
+        Enhance communication and engagement with automated email and SMS reminders for lessons and payments, 
+        ensuring students and parents never miss important updates. Keep parents informed with regular progress 
+        reports, fostering transparency and involvement in the learning journey. With timely notifications, you
+         can reduce missed sessions, improve payment consistency, and create a seamless experience for everyone 
+         involved.
+        `}
+                reverse={false}
+                handleClick={handleClick}
+            />
+            {/* fifth section */}
+            <HomeFeatureSection
+                imageSrc="/home2.webp"
+                imageAlt="Payroll Management"
+                tag="Centralized Profile Management"
+                title="Payroll"
+                highlight="Management"
+                description={`Calendar-based payroll management system simplifies the process for tutors, admin,
+         and support staff by aligning payments with scheduled work hours. The platform automatically 
+         tracks hours worked, assigns pay based on set rates, and integrates with the calendar for accurate 
+         payroll calculation. This ensures timely and error-free payments while providing a clear, visual 
+         overview of staff schedules and compensation, making payroll management more efficient and transparent.
+`}
+                reverse={true}
+                background="#F7F7FE"
+                handleClick={handleClick}
+            />
             {/* sixth section */}
             <section className="w-full flex justify-center fade-in rounded-2xl my-12 lg:my-20">
                 <div
@@ -108,10 +118,45 @@ const Home = () => {
                 </div>
             </section>
 
-
-
             {/* seventh section */}
+            <section className="max-w-[1440px] mx-auto flex flex-col items-center justify-center px-2 md:px-12 xl:px-20 my-12 lg:my-20">
+                <HomeFeaturedSectionTag label="Who Can Use" />
+                <h2 className="font-murecho max-w-[800px] text-center text-3xl md:text-6xl font-bold leading-9 md:leading-[4.5rem] text-[#363636] mt-6">
+                    Designed To Support All Types Of <span className="text-[rgb(89,105,251)]"> Businesses</span>
+                </h2>
+                <p className="text-lg max-w-[600px] text-center font-monteserate font-extralight ml-2 mt-6">Designed for tutors of all backgrounds, Seemi simplifies student management, scheduling,
+                    and lesson delivery perfect for any teaching style or subject.</p>
+                <div className="max-w-[1050px] h- flex flex-wrap items-center justify-center gap-6 mt-12">
+                    <FeaturedSectionCard imageSrc={'/tutot.png'} imageAlt={"tutor"} title={"Indvidual Tutors"}
+                        description={"Looking to manage day to day tutoring tasks"} />
+                    <FeaturedSectionCard imageSrc={'/tutot.png'} imageAlt={"tutor"} title={"Tutoring Starups"}
+                        description={"Looking for advance tools to grow"} />
+                    <FeaturedSectionCard imageSrc={'/tutot.png'} imageAlt={"tutor"} title={"Tutoring Scaleups"}
+                        description={"Looking to grow exponential"} />
+                </div>
+            </section>
 
+            {/* eighth section */}
+            {/* sixth section */}
+            <section className="w-full flex justify-center fade-in rounded-2xl my-12 lg:my-20">
+                <div
+                    className="w-[90%] min-h-[300px] lg:min-h-[600px] flex flex-col items-start  md:justify-center md:items-center text-center px-8 py-12 fade-in bg-cover lg:bg-contain rounded-2xl"
+                    style={{
+                        backgroundImage: "url('/homebg.png')",
+                        backgroundPosition: "center center",
+                        backgroundRepeat: "no-repeat",
+                    }}
+                >
+                    <h2 className="font-murecho text-left md:text-center text-3xl lg:text-6xl font-bold leading-9 lg:leading-[4.5rem] text-white ">
+                        Start Your Journey With Seemi
+                    </h2>
+                    <p className="max-w-[600px] text-lg text-left md:text-center font-monteserate font-extralight text-white mt-6">
+                        Start your tutoring journey today and enjoy personalized learning, expert support, and the confidence to reach your academic goals!
+
+                    </p>
+                    <button onClick={handleClick} className="text-[#5969FB] font-murecho font-light cursor-pointer px-6 py-2 text-lg bg-white rounded-full mt-8">Book a Demo</button>
+                </div>
+            </section>
         </>
 
     )

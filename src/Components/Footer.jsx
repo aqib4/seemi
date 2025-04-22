@@ -35,15 +35,13 @@ const Footer = () => {
         { name: "Cookie Policy", url: "#" }
     ];
 
-
-
     return (
         <footer 
         style={{ backgroundImage: "url('/footer.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition:"center" }}
         className="w-full mx-auto bg-no-repeat bg-cover mt-14 "
         >
 
-            <div className="max-w-[1440px] mx-auto px-4 md:px-[2rem] lg:px-[8rem] 2xl:px-[0rem] flex flex-wrap lg:flex-nowrap gap-16 md:gap-12 lg:gap-4 md:items-start sm:items-center     md:justify-between  py-16">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-[2rem] lg:px-[4rem] xl:[7rem] 2xl:px-[0rem] flex flex-wrap lg:flex-nowrap gap-16 md:gap-12 lg:gap-4 md:items-start sm:items-center     md:justify-between  py-16">
                 {/* Column 1 - Logo and Contact */}
                 <div className="footer-col footer-links ">
                     <img src={logo} alt="Logo" className="w-[147px] h-[44px]" />
@@ -106,7 +104,7 @@ const Footer = () => {
             {/* footer bottom */}
             <div className='footer-line'>
             </div>
-            <div className="max-w-[1440px] mx-auto px-4 md:px-[7rem] xxl:px-[10rem] font-monteserate font-light text-2xl flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between py-4 footer-bottom"
+            <div className="max-w-[1440px] mx-auto px-4 md:px-[4rem] xl:[7rem] 2xl:px-[10rem] font-monteserate font-light text-2xl flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between py-4 footer-bottom"
             >
                 <p className='font-monteserate font-extralight text-xl sm:text-center'>Copyright 2025 Seemi. All Rights Reserved</p>
                 <span className="flex items-center gap-2 font-monteserate font-extralight text-xl ">

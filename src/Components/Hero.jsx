@@ -60,9 +60,9 @@ const Hero = () => {
     >
       <div className="max-w-[1440px] mx-auto pt-20 md:px-12 2xl:px-[0rem] grid grid-cols-1 xl:grid-cols-2">
         {/* Left Side */}
-        <div className="flex flex-col justify-center pt-10 items-start w-full px-2 sm:px-6 xl:px-[7rem] xl:pt-0">
+        <div className="flex flex-col justify-center pt-10 items-start w-full px-2 sm:px-6 xl:px-[4rem] xl:pt-0">
           <img src={logo} alt="Logo" className="w-[147px] h-[44px] md:w-[287px] md:h-[88px] xl:w-[147px] xl:h-[44px] " />
-          <h1 className="font-murecho  text-3xl lg:text-5xl font-bold leading-[1.2] text-[#363636] max-w-[950px] mt-6">
+          <h1 className="font-murecho  text-3xl lg:text-6xl font-bold leading-[1.2] text-[#363636] max-w-[800px] mt-6">
             Smarter Way To Manage Your
             <span className="text-[#5969FB]"> Tutoring Business</span>
           </h1>
