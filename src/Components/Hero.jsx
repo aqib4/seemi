@@ -6,8 +6,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
-import "../styles/hero.css"; // Assuming you have a CSS file for styles
-
+import "../styles/animateSection.css"; // Assuming you have a CSS file for styles
 const Hero = () => {
   const formik = useFormik({
     initialValues: {
@@ -52,17 +51,18 @@ const Hero = () => {
       }
     },
   });
-
+  
   return (
-    <section
+    <div
+      id="hero"
       className="w-full mx-auto bg-no-repeat bg-[#F7F7FE] pb-8"
       style={{ backgroundImage: "url('/bg.png')", backgroundPosition:"top left", backgroundSize:"30% auto", backgroundColor:"#F7F7FE"}}
     >
       <div className="max-w-[1440px] mx-auto pt-20 md:px-12 2xl:px-[0rem] grid grid-cols-1 xl:grid-cols-2">
         {/* Left Side */}
-        <div className="flex flex-col justify-center pt-10 items-start w-full px-2 sm:px-6 xl:px-[7rem] xl:pt-0 animate-fadeIn">
+        <div className="flex flex-col justify-center pt-10 items-start w-full px-2 sm:px-6 xl:px-[7rem] xl:pt-0">
           <img src={logo} alt="Logo" className="w-[147px] h-[44px] md:w-[287px] md:h-[88px] xl:w-[147px] xl:h-[44px] " />
-          <h1 className="font-murecho  text-3xl lg:text-5xl font-bold leading-[1.2] text-[#363636] max-w-[800px] mt-6">
+          <h1 className="font-murecho  text-3xl lg:text-5xl font-bold leading-[1.2] text-[#363636] max-w-[950px] mt-6">
             Smarter Way To Manage Your
             <span className="text-[#5969FB]"> Tutoring Business</span>
           </h1>
@@ -73,14 +73,14 @@ const Hero = () => {
         </div>
 
         {/* Right Side */}
-        <div className="flex flex-col justify-center items-start w-full px-2 sm:px-6 h-full right-section-hero animate-fadeIn"> 
+        <div className="flex flex-col justify-center items-start w-full px-2 sm:px-6 h-full right-section-hero fade-in"> 
           <div
-            className="w-full h-full bg-center bg-no-repeat  px-4 md:px-2 py-6 md:py-20 flex justify-center items-center"
+            className="w-full h-full bg-center bg-no-repeat  px-4 md:px-2 py-6 md:py-20 flex justify-center items-center fadeIn rounded-2xl"
             style={{ backgroundImage: "url('/hero.png')" }}
           >
             <form
               onSubmit={formik.handleSubmit}
-              className="w-full h-full md:w-[80%] flex  flex-col items-center bg-white px-5 py-2  border-[3px] border-[#181C39] rounded-[20px] shadow-lg"
+              className="w-full h-full md:w-[80%] flex  flex-col items-center bg-white px-5 py-2  border-[3px] border-[#181C39] rounded-[20px] shadow-lg fadeIn"
             >
               <h2 className="font-murecho text-3xl md:text-5xl font-bold text-center leading-9 md:leading-14 text-[#363636] mb-2 md:mb-6">
                 Book Your <span className="text-[#5969FB]">Demo</span>
@@ -146,7 +146,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
