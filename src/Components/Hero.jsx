@@ -58,11 +58,11 @@ const Hero = () => {
       className="w-full mx-auto bg-no-repeat bg-[#F7F7FE] pb-8"
       style={{ backgroundImage: "url('/bg.png')", backgroundPosition:"top left", backgroundSize:"30% auto", backgroundColor:"#F7F7FE"}}
     >
-      <div className="max-w-[1440px] mx-auto pt-20 md:px-12 2xl:px-[0rem] grid grid-cols-1 xl:grid-cols-2">
+      <div className="max-w-[1440px] mx-auto pt-20 md:px-8  grid grid-cols-1 xl:grid-cols-2">
         {/* Left Side */}
-        <div className="flex flex-col justify-center pt-10 items-start w-full px-2 sm:px-6 xl:px-[4rem] xl:pt-0">
+        <div className="flex flex-col justify-center pt-10 items-start w-full px-2 sm:px-6 xl:px-[3rem] xl:pt-0">
           <img src={logo} alt="Logo" className="w-[147px] h-[44px] md:w-[287px] md:h-[88px] xl:w-[147px] xl:h-[44px] " />
-          <h1 className="font-murecho  text-3xl lg:text-6xl font-bold leading-[1.2] text-[#363636] max-w-[800px] mt-6">
+          <h1 className="font-murecho  text-3xl lg:text-6xl font-bold leading-[1.2] text-[#363636] max-w-[950px] mt-6">
             Smarter Way To Manage Your
             <span className="text-[#5969FB]"> Tutoring Business</span>
           </h1>
@@ -75,7 +75,7 @@ const Hero = () => {
         {/* Right Side */}
         <div className="flex flex-col justify-center items-start w-full px-2 sm:px-6 h-full right-section-hero fade-in"> 
           <div
-            className="w-full h-full bg-center bg-no-repeat  px-4 md:px-2 py-6 md:py-20 flex justify-center items-center fadeIn rounded-2xl"
+            className="w-full h-full bg-center bg-no-repeat px-4 md:px-2 py-6 md:py-20 flex justify-center items-center fadeIn rounded-2xl"
             style={{ backgroundImage: "url('/hero.png')" }}
           >
             <form
@@ -105,7 +105,7 @@ const Hero = () => {
                     type={field.type}
                     name={field.name}
                     placeholder={field.placeholder}
-                    className="w-full h-[45px] rounded-[10px] border-[2.5px] border-[#5969FB] pl-5 bg-[rgba(211,218,255,0.2)] text-gray-500 font-inter focus:outline-none focus:border-[4px]"
+                    className="w-full h-[45px] font-murecho font-light rounded-[10px] border-[2.5px] border-[#5969FB] pl-5 bg-[rgba(211,218,255,0.2)] text-gray-500 font-inter focus:outline-none focus:border-[4px]"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values[field.name]}

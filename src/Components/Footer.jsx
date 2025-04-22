@@ -38,7 +38,7 @@ const Footer = () => {
     return (
         <footer 
         style={{ backgroundImage: "url('/footer.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition:"center" }}
-        className="w-full mx-auto bg-no-repeat bg-cover mt-14 "
+        className="w-full mx-auto bg-no-repeat bg-cover "
         >
 
             <div className="max-w-[1440px] mx-auto px-4 md:px-[2rem] lg:px-[4rem] xl:[7rem] 2xl:px-[0rem] flex flex-wrap lg:flex-nowrap gap-16 md:gap-12 lg:gap-4 md:items-start sm:items-center     md:justify-between  py-16">
