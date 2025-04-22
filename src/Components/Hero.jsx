@@ -6,7 +6,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
-import "../styles/Hero.css"; // Assuming you have a CSS file for styles
+import "../styles/hero.css"; // Assuming you have a CSS file for styles
 
 const Hero = () => {
   const formik = useFormik({
