@@ -38,29 +38,32 @@ const Footer = () => {
 
 
     return (
-        <footer >
+        <footer 
+        style={{ backgroundImage: "url('/footer.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition:"center" }}
+        className="w-full mx-auto bg-no-repeat bg-cover mt-14 "
+        >
 
-            <div className="footer">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-[2rem] lg:px-[8rem] 2xl:px-[0rem] flex flex-wrap lg:flex-nowrap gap-16 md:gap-12 lg:gap-4 md:items-start sm:items-center     md:justify-between  py-16">
                 {/* Column 1 - Logo and Contact */}
-                <div className="footer-col footer-links">
+                <div className="footer-col footer-links ">
                     <img src={logo} alt="Logo" className="w-[147px] h-[44px]" />
                     <ul className="social-media">
                         {socialMediaLinks.map((item, index) => (
                             <li key={index} className="flex items-center gap-2 mt-4">
                                 {item.icon}
-                                <span>{item.value}</span>
+                                <span className='font-monteserate font-light text-md'>{item.value}</span>
                             </li>
                         ))}
                     </ul>
                 </div>
 
                 {/* Column 2 - Navigation Links */}
-                <div className="footer-col footer-links">
-                    <h3 className="footer-col-heading text-[#5969FB]">Links</h3>
+                <div className="footer-col footer-links ">
+                    <h3 className="footer-col-heading font-murecho font-bold text-2xl text-[#5969FB]">Links</h3>
                     <ul className="footer-list">
                         {links.map((item, index) => (
                             <li key={index} className="mt-2">
-                                <a href={item.url} className="">
+                                <a href={item.url} className='font-monteserate text-md font-extralight hover:text-[#5969FB]'>
                                     {item.name}
                                 </a>
                             </li>
@@ -69,13 +72,13 @@ const Footer = () => {
                 </div>
 
                 {/* Column 3 - Legal Links */}
-                <div className="footer-col footer-links ">
-                    <h3 className="footer-col-heading text-[#5969FB]">Legal</h3>
+                <div className="footer-col footer-links  ">
+                    <h3 className="footer-col-heading font-murecho font-bold text-2xl text-[#5969FB]">Legal</h3>
                     <ul>
                         {
                             legal.map((item, index) => (
                                 <li key={index} className="mt-2">
-                                    <a href={item.url} className="hover:text-[#5969FB] ">
+                                    <a href={item.url} className="hover:text-[#5969FB] text-md font-monteserate font-extralight">
                                         {item.name}
                                     </a>
                                 </li>
@@ -86,26 +89,27 @@ const Footer = () => {
 
                 {/* Column 4 - Newsletter */}
                 <div className='footer-col-newsletter'>
-                    <h3 className="footer-col-heading text-[#5969FB]">Newslater</h3>
+                    <h3 className="footer-col-heading font-murecho font-bold text-2xl text-[#5969FB]">Newslater</h3>
                     <p className="footer-paragraph">
                         Stay upto date
                     </p>
-                    <div className="footer-email-box">
+                    <div className=" flex justify-center items-center w-100% h-15 bg-white border-2 border-[#b3b3b3] rounded-[50px] mt-4 p-2.5">
                         <input
                             type="email"
                             placeholder="Your Email"
-                            className="footer-email-input"
+                            className="font-monteserate font-light w-full h-full bg-transparent outline-none px-4 rounded-[50px] placeholder:text-[#404042]"
                         />
-                        <button className="footer-btn">Subscribe</button>
+                        <button className=" font-monteserate font-light py-2.5 px-5 bg-[#5969FB] text-white border-none rounded-full outline-0 borde leading-8">Subscribe</button>
                     </div>
                 </div>
             </div>
             {/* footer bottom */}
             <div className='footer-line'>
             </div>
-            <div className="footer-bottom">
-                <p>Copyright 2025 Seemi. All Rights Reserved</p>
-                <span>
+            <div className="max-w-[1440px] mx-auto px-4 md:px-[7rem] xxl:px-[10rem] font-monteserate font-light text-2xl flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between py-4 footer-bottom"
+            >
+                <p className='font-monteserate font-extralight text-xl sm:text-center'>Copyright 2025 Seemi. All Rights Reserved</p>
+                <span className="flex items-center gap-2 font-monteserate font-extralight text-xl ">
                 <FaLink size={20}  color='#5969FB'/>
                 Tailored by AQIB
                 </span>

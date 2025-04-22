@@ -1,2 +1,14 @@
+@font-face {
+    font-family: murecho;
+    src: url("../src/assets/fonts/Murecho-Regular.ttf");
+    font-family: monteserate;
+    src: url("../src/assets/fonts/Montserrat-Regular.ttf");
+}
 
 @import "tailwindcss";
+
+@theme{
+    --font-murecho: ['murecho, sans-serif'];
+    --font-monteserate: ['monteserate, sans-serif'];
+}
+
