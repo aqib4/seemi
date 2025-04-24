@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/logo.png";
+import logo from "/logo.png";
 import { MdEmail } from "react-icons/md";
 import { HiPhone } from "react-icons/hi2";
 import { FaLink } from "react-icons/fa";

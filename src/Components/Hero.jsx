@@ -1,6 +1,6 @@
 import React from "react";
 import "../../src/index.css"
-import logo from "../assets/logo.png";
+import logo from "/logo.png";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
