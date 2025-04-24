@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styles/footer.css";
 import logo from "../assets/logo.png";
 import { MdEmail } from "react-icons/md";
 import { HiPhone } from "react-icons/hi2";
@@ -49,7 +48,7 @@ const Footer = () => {
                         {socialMediaLinks.map((item, index) => (
                             <li key={index} className="flex items-center gap-2 mt-4">
                                 {item.icon}
-                                <span className='font-monteserate font-light text-md'>{item.value}</span>
+                                <span className='font-monteserate font-extralight text-[1.2rem]'>{item.value}</span>
                             </li>
                         ))}
                     </ul>
@@ -61,7 +60,7 @@ const Footer = () => {
                     <ul className="footer-list">
                         {links.map((item, index) => (
                             <li key={index} className="mt-2">
-                                <a href={item.url} className='font-monteserate text-md font-extralight hover:text-[#5969FB]'>
+                                <a href={item.url} className='font-monteserate text-[1.2rem] font-extralight hover:text-[#5969FB]'>
                                     {item.name}
                                 </a>
                             </li>
@@ -76,7 +75,7 @@ const Footer = () => {
                         {
                             legal.map((item, index) => (
                                 <li key={index} className="mt-2">
-                                    <a href={item.url} className="hover:text-[#5969FB] text-md font-monteserate font-extralight">
+                                    <a href={item.url} className="hover:text-[#5969FB] text-[1.2rem] font-monteserate font-extralight">
                                         {item.name}
                                     </a>
                                 </li>
@@ -88,24 +87,23 @@ const Footer = () => {
                 {/* Column 4 - Newsletter */}
                 <div className='footer-col-newsletter'>
                     <h3 className="footer-col-heading font-murecho font-bold text-2xl text-[#5969FB]">Newslater</h3>
-                    <p className="footer-paragraph">
+                    <p className="font-monteserate font-extralight text-[1.2rem] ">
                         Stay upto date
                     </p>
                     <div className=" flex justify-center items-center w-100% h-15 bg-white border-2 border-[#b3b3b3] rounded-[50px] mt-4 p-2.5">
                         <input
                             type="email"
                             placeholder="Your Email"
-                            className="font-monteserate font-light w-full h-full bg-transparent outline-none px-4 rounded-[50px] placeholder:text-[#404042]"
+                            className="font-monteserate font-extralight w-full h-full bg-transparent outline-none px-4 rounded-[50px] placeholder:text-[#404042]"
                         />
-                        <button className=" font-monteserate font-light py-2.5 px-5 bg-[#5969FB] text-white border-none rounded-full outline-0 borde leading-8">Subscribe</button>
+                        <button className=" font-monteserate font-extralight py-2.5 px-5 bg-[#5969FB] text-white border-none rounded-full outline-0 borde leading-8">Subscribe</button>
                     </div>
                 </div>
             </div>
             {/* footer bottom */}
-            <div className='footer-line'>
-            </div>
-            <div className="max-w-[1440px] mx-auto px-4 md:px-[4rem] xl:[7rem] 2xl:px-[10rem] font-monteserate font-light text-2xl flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between py-4 footer-bottom"
-            >
+            <div className='w-full h-8' style={{backgroundImage: "url('/line.png')", backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition:"center" }}></div>
+            
+            <div className="max-w-[1440px] mx-auto px-4 md:px-[4rem] xl:[7rem] 2xl:px-[10rem] font-monteserate font-light text-2xl flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between py-4 footer-bottom">
                 <p className='font-monteserate font-extralight text-xl sm:text-center'>Copyright 2025 Seemi. All Rights Reserved</p>
                 <span className="flex items-center gap-2 font-monteserate font-extralight text-xl ">
                 <FaLink size={20}  color='#5969FB'/>

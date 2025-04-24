@@ -3,8 +3,6 @@ import Hero from '../Components/Hero'
 import "../styles/animateImage.css";
 import "../styles/animateSection.css"
 import HomeFeatureSection from "../Components/HomeFeatureSection";
-import HomeFeaturedSectionTag from "../Components/HomeFeaturedSectionTag";
-import FeaturedSectionCard from "../Components/FeaturedSectionCard";
 import FeaturedCTA from "../Components/FeaturedCTA";
 
 const Home = () => {
