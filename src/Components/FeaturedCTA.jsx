@@ -19,7 +19,7 @@ const FeaturedCTA = ({title , describtion,handleClick}) => {
             <p className="max-w-[600px] text-lg text-left md:text-center font-monteserate font-extralight text-white mt-6">
        {describtion}
             </p>
-            <button onClick={handleClick} className="text-[#5969FB] font-murecho font-light cursor-pointer px-6 py-2 text-lg bg-white rounded-full mt-8">Book a Demo</button>
+            <button onClick={handleClick} className="text-[#5969FB] font-murecho font-light cursor-pointer px-6 py-2 text-lg bg-white rounded-full mt-8 lg:mt-2 xl:mt-8">Book a Demo</button>
         </div>
     </section>
     );

@@ -58,7 +58,7 @@ const Hero = () => {
       className="w-full mx-auto bg-no-repeat bg-[#F7F7FE] pb-8"
       style={{ backgroundImage: "url('/bg.png')", backgroundPosition:"top left", backgroundSize:"30% auto", backgroundColor:"#F7F7FE"}}
     >
-      <div className="max-w-[1440px] mx-auto pt-20 md:px-8  grid grid-cols-1 xl:grid-cols-2">
+      <div className="max-w-[1440px] mx-auto pt-20 md:px-8 lg:px-[3rem] grid grid-cols-1 xl:grid-cols-2">
         {/* Left Side */}
         <div className="flex flex-col justify-center pt-10 items-start w-full px-2 sm:px-6 xl:px-[3rem] xl:pt-0">
           <img src={logo} alt="Logo" className="w-[147px] h-[44px] md:w-[287px] md:h-[88px] xl:w-[147px] xl:h-[44px] " />

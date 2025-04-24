@@ -83,7 +83,7 @@ const Home = () => {
             />
             {/* fifth section */}
             <HomeFeatureSection
-                imageSrc="/home2.webp"
+                imageSrc="/home5.png"
                 imageAlt="Payroll Management"
                 tag="Centralized Profile Management"
                 title="Payroll"
@@ -103,29 +103,6 @@ const Home = () => {
                 handleClick={handleClick}
                 describtion={" Elevate your tutoring business with our all-in-one software. Simplify scheduling, manage students seamlessly, and deliver engaging lessons—all from a single, user-friendly platform."} />
 
-
-            {/* seventh section */}
-            <section className="max-w-[1440px] mx-auto flex flex-col items-center justify-center px-2 md:px-12 xl:px-20 my-12 lg:my-20">
-                <HomeFeaturedSectionTag label="Who Can Use" />
-                <h2 className="font-murecho max-w-[800px] text-center text-3xl md:text-6xl font-bold leading-9 md:leading-[4.5rem] text-[#363636] mt-6">
-                    Designed To Support All Types Of <span className="text-[rgb(89,105,251)]"> Businesses</span>
-                </h2>
-                <p className="text-lg max-w-[600px] text-center font-monteserate font-extralight ml-2 mt-6">Designed for tutors of all backgrounds, Seemi simplifies student management, scheduling,
-                    and lesson delivery perfect for any teaching style or subject.</p>
-                <div className="max-w-[1050px] h- flex flex-wrap items-center justify-center gap-6 mt-12">
-                    <FeaturedSectionCard imageSrc={'/tutot.png'} imageAlt={"tutor"} title={"Indvidual Tutors"}
-                        description={"Looking to manage day to day tutoring tasks"} />
-                    <FeaturedSectionCard imageSrc={'/tutot.png'} imageAlt={"tutor"} title={"Tutoring Starups"}
-                        description={"Looking for advance tools to grow"} />
-                    <FeaturedSectionCard imageSrc={'/tutot.png'} imageAlt={"tutor"} title={"Tutoring Scaleups"}
-                        description={"Looking to grow exponential"} />
-                </div>
-            </section>
-
-            {/* eighth section */}
-            <FeaturedCTA title={"Start Your Journey With Seemi"}
-                handleClick={handleClick}
-                describtion={"Start your tutoring journey today and enjoy personalized learning, expert support, and the confidence to reach your academic goals!"} />
         </>
 
     )
